@@ -59,9 +59,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
+    /* Brand palette: blue & white (White Sands + Blue Sands) */
     --ocean-deep:#173B4C; --ocean:#1F5D74; --ocean-light:#5B93A6;
-    --sand:#FAF5EC; --sand-dark:#F0E5D2;
-    --coral:#E38150; --coral-dark:#C96A3C;
+    --sand:#FFFFFF; --sand-dark:#E9F2F8;
+    --coral:#2F7FC1; --coral-dark:#1F5F94;
     --teal:#2E8B85; --teal-dark:#23716C;
     --ink:#22303A; --muted:#5C6C74; --white:#FFFFFF;
     --radius:14px; --shadow:0 10px 30px rgba(23,59,76,0.12); --shadow-lg:0 20px 50px rgba(23,59,76,0.18);
@@ -83,9 +84,9 @@
   .btn-outline:hover{background:var(--ocean);color:#fff;}
 
   /* ---------- NAV ---------- */
-  header{position:sticky;top:0;z-index:100;background:rgba(250,245,236,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(23,59,76,.08);}
+  header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(23,59,76,.08);}
   nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1180px;margin:0 auto;}
-  .logo{font-family:'Playfair Display',serif;font-weight:700;font-size:1.3rem;color:var(--ocean-deep);}
+  .logo{font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:1.3rem;color:var(--ocean-deep);letter-spacing:0;font-variant-ligatures:none;-webkit-font-variant-ligatures:none;-webkit-font-smoothing:auto;-moz-osx-font-smoothing:auto;text-rendering:optimizeLegibility;}
   .logo span{color:var(--coral);}
   .nav-links{display:flex;gap:32px;align-items:center;font-weight:600;font-size:.92rem;color:var(--ocean-deep);}
   .nav-links a{opacity:.85;transition:.2s;}
@@ -157,6 +158,7 @@
   .prop-card-body p{color:var(--muted);font-size:.95rem;margin-bottom:18px;}
   .prop-chip-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px;}
   .prop-chip{background:var(--sand-dark);color:var(--ocean-deep);font-size:.78rem;font-weight:600;padding:6px 12px;border-radius:999px;}
+  .prop-card-body .btn{display:flex;justify-content:center;width:fit-content;margin:0 auto;}
   @media(max-width:820px){.prop-grid{grid-template-columns:1fr;}}
 
   /* ---------- ABOUT ---------- */
@@ -209,7 +211,7 @@
   .booking-side li{display:flex;gap:10px;margin-bottom:12px;font-size:.92rem;color:rgba(255,255,255,.9);}
   .booking-side li::before{content:"★";color:var(--coral);}
   .booking-main{padding:44px 40px;}
-  .widget-placeholder{border:2px dashed #C9B79A;border-radius:14px;padding:30px;background:var(--sand);}
+  .widget-placeholder{border:2px dashed #A9C6D9;border-radius:14px;padding:30px;background:var(--sand);}
   .widget-placeholder .notice{display:flex;gap:10px;align-items:flex-start;background:#FFF3E6;border:1px solid #F0D3AE;color:#8A5A21;padding:12px 14px;border-radius:10px;font-size:.85rem;margin-bottom:22px;}
   .fake-field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;}
   .fake-field{background:#fff;border:1px solid var(--sand-dark);border-radius:10px;padding:14px 16px;}
@@ -260,7 +262,7 @@
   /* ---------- EMAIL GATE (QR landing pages) ---------- */
   .gate{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px 24px;background-size:cover;background-position:center;}
   .gate-card{background:#fff;max-width:440px;width:100%;border-radius:20px;box-shadow:var(--shadow-lg);padding:44px 36px;text-align:center;}
-  .gate-logo{font-family:'Playfair Display',serif;font-weight:700;font-size:1.3rem;color:var(--ocean-deep);margin-bottom:18px;}
+  .gate-logo{font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:1.3rem;color:var(--ocean-deep);margin-bottom:18px;letter-spacing:0;font-variant-ligatures:none;-webkit-font-variant-ligatures:none;-webkit-font-smoothing:auto;-moz-osx-font-smoothing:auto;text-rendering:optimizeLegibility;}
   .gate-logo span{color:var(--coral);}
   .gate-card h1{font-size:1.6rem;margin-bottom:12px;}
   .gate-sub{color:var(--muted);font-size:.95rem;margin-bottom:26px;line-height:1.5;}
@@ -296,7 +298,6 @@
       <a href="#home">Home</a>
       <a href="#white-sands">White Sands</a>
       <a href="#blue-sands">Blue Sands</a>
-      <a href="#white-sands-book" class="btn btn-primary nav-cta">Feel It — Book Now</a>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
   </nav>
@@ -307,7 +308,7 @@
      ====================================================================== -->
 <div class="page" id="page-home">
   <div class="home-hero" style="background-image:linear-gradient(180deg,rgba(20,40,50,.28) 0%, rgba(12,26,34,.75) 100%), url('https://images.unsplash.com/photo-1760349212777-b5fed0ca3ce7?q=80&amp;w=2000&amp;auto=format&amp;fit=crop');">
-    <span class="eyebrow fade-in-up" style="color:#F3C9A6;">Feel The Thrill Before You Even Pack</span>
+    <span class="eyebrow fade-in-up" style="color:#BFE3FA;">Feel The Thrill Before You Even Pack</span>
     <h1 class="fade-in-up d1">The vacation your group will still be talking about next year</h1>
     <p class="fade-in-up d2">Picture it: the whole group cannonballing into the pool before the bags are even unpacked, laughter carrying across the patio as the sun goes down, that first barefoot walk to the water at golden hour. Two private-pool beach houses built for exactly those moments — White Sands in Panama City Beach, FL, and Blue Sands in Murrells Inlet, SC.</p>
     <div class="hero-btns fade-in-up d3" style="justify-content:center;margin-top:34px;">
@@ -378,7 +379,7 @@
 <div class="page" id="page-white-sands">
   <section class="hero" style="background-image:linear-gradient(180deg,rgba(15,35,45,.15) 0%, rgba(12,28,38,.75) 100%), url('https://assets.hospitable.com/property_images/2151652/ygrTjb2su78VGbqbVScSsvFBTuc4DmnRKtE80Jcu.jpg');">
     <div class="hero-inner">
-      <span class="eyebrow fade-in-up" style="color:#F3C9A6;">Panama City Beach, Florida</span>
+      <span class="eyebrow fade-in-up" style="color:#BFE3FA;">Panama City Beach, Florida</span>
       <h1 class="fade-in-up d1">White Sands</h1>
       <p class="hero-sub fade-in-up d2">Feel the sand between your toes before the bags are even unpacked. A private saltwater pool for cannonball contests, a game room built for trash talk, and the ocean just a 7-minute walk away.</p>
       <div class="hero-meta fade-in-up d3">
@@ -426,7 +427,7 @@
 
   <section class="gallery-section" id="white-sands-gallery">
     <div class="container">
-      <div class="section-head"><span class="eyebrow" style="color:#F3C9A6;">Gallery</span><h2>A look inside White Sands</h2><p>Click any photo for a closer look.</p></div>
+      <div class="section-head"><span class="eyebrow" style="color:#BFE3FA;">Gallery</span><h2>A look inside White Sands</h2><p>Click any photo for a closer look.</p></div>
       <div class="gallery-grid" id="galleryGridWhite"></div>
     </div>
   </section>
@@ -523,7 +524,7 @@
 <div class="page" id="page-blue-sands">
   <section class="hero" style="background-image:linear-gradient(180deg,rgba(10,30,45,.2) 0%, rgba(8,22,32,.78) 100%), url('https://a0.muscache.com/im/pictures/prohost-api/Hosting-1152832952825647992/original/3cc68f0e-8780-4e11-be3c-2c0deb919822.jpeg?im_w=1200');">
     <div class="hero-inner">
-      <span class="eyebrow fade-in-up" style="color:#8FD9D3;">Murrells Inlet / Garden City, South Carolina</span>
+      <span class="eyebrow fade-in-up" style="color:#BFE3FA;">Murrells Inlet / Garden City, South Carolina</span>
       <h1 class="fade-in-up d1">Blue Sands</h1>
       <p class="hero-sub fade-in-up d2">The pool cannonballs. The hot tub after a long beach day. The karaoke mic getting passed around at midnight. A big beach house with an elevator to every floor and a game room built for a crowd — steps from the sand.</p>
       <div class="hero-meta fade-in-up d3">
@@ -571,7 +572,7 @@
 
   <section class="gallery-section" id="blue-sands-gallery">
     <div class="container">
-      <div class="section-head"><span class="eyebrow" style="color:#8FD9D3;">Gallery</span><h2>A look inside Blue Sands</h2><p>Click any photo for a closer look. Photos pulled from the current Airbnb listing.</p></div>
+      <div class="section-head"><span class="eyebrow" style="color:#BFE3FA;">Gallery</span><h2>A look inside Blue Sands</h2><p>Click any photo for a closer look. Photos pulled from the current Airbnb listing.</p></div>
       <div class="gallery-grid" id="galleryGridBlue"></div>
     </div>
   </section>
@@ -678,7 +679,7 @@
         <input type="hidden" name="form-name" value="direct-offer-white-sands">
         <input type="email" name="email" required placeholder="you@email.com" autocomplete="email">
         <label class="gate-checkbox"><input type="checkbox" name="marketing_consent" value="Yes, send me discounts &amp; offers"> I'd like to receive discounts and offers by email</label>
-        <button type="submit" class="btn btn-primary">Continue to Booking</button>
+        <button type="submit" class="btn btn-primary">Continue</button>
       </form>
       <div class="gate-error" id="gateErrorWhite">Something went wrong — please try again, or <a href="#white-sands-book">continue anyway</a>.</div>
       <p class="gate-note">We'll only use this to send direct booking offers for White Sands &amp; Blue Sands. No spam, unsubscribe anytime.</p>
@@ -696,7 +697,7 @@
         <input type="hidden" name="form-name" value="direct-offer-blue-sands">
         <input type="email" name="email" required placeholder="you@email.com" autocomplete="email">
         <label class="gate-checkbox"><input type="checkbox" name="marketing_consent" value="Yes, send me discounts &amp; offers"> I'd like to receive discounts and offers by email</label>
-        <button type="submit" class="btn btn-primary">Continue to Booking</button>
+        <button type="submit" class="btn btn-primary">Continue</button>
       </form>
       <div class="gate-error" id="gateErrorBlue">Something went wrong — please try again, or <a href="#blue-sands-book">continue anyway</a>.</div>
       <p class="gate-note">We'll only use this to send direct booking offers for White Sands &amp; Blue Sands. No spam, unsubscribe anytime.</p>
@@ -714,7 +715,7 @@
         <input type="hidden" name="form-name" value="direct-offer-all">
         <input type="email" name="email" required placeholder="you@email.com" autocomplete="email">
         <label class="gate-checkbox"><input type="checkbox" name="marketing_consent" value="Yes, send me discounts &amp; offers"> I'd like to receive discounts and offers by email</label>
-        <button type="submit" class="btn btn-primary">Continue to Booking</button>
+        <button type="submit" class="btn btn-primary">Continue</button>
       </form>
       <div class="gate-error" id="gateErrorAll">Something went wrong — please try again, or <a href="#home">continue anyway</a>.</div>
       <p class="gate-note">We'll only use this to send direct booking offers for White Sands &amp; Blue Sands. No spam, unsubscribe anytime.</p>
