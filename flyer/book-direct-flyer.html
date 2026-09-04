@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Thrill Vacations — Book Direct Flyer</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @page { size: 8.5in 11in; margin: 0; }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{width:8.5in;height:11in;font-family:'Inter',sans-serif;-webkit-print-color-adjust:exact;print-color-adjust:exact;background:#FAF5EC;color:#22303A;}
+  .sheet{width:8.5in;height:11in;position:relative;border:2px solid #C9A34E;box-sizing:border-box;display:flex;flex-direction:column;overflow:hidden;}
+
+  .header{flex:none;background:#173B4C;color:#fff;padding:26px 44px;text-align:center;}
+  .header .brand{font-family:'Playfair Display',serif;font-weight:700;font-size:30px;letter-spacing:.05em;text-transform:uppercase;}
+  .header .brand span{color:#E38150;}
+  .header .tag{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;opacity:.75;margin-top:6px;}
+
+  .body{flex:1;min-height:0;display:flex;flex-direction:column;padding:30px 44px 0;}
+  .lede{text-align:center;max-width:6.4in;margin:0 auto 26px;}
+  .lede h2{font-family:'Playfair Display',serif;font-weight:700;font-size:24px;color:#173B4C;margin-bottom:8px;line-height:1.3;}
+  .lede p{font-size:12.5px;color:#5C6C74;line-height:1.5;}
+
+  .props{display:grid;grid-template-columns:1fr 1fr;gap:24px;flex:none;}
+  .prop-card{background:#fff;border-radius:16px;box-shadow:0 10px 30px rgba(23,59,76,0.12);overflow:hidden;text-align:center;}
+  .prop-card .photo{width:100%;height:auto;display:block;background:#F0E5D2;}
+  .prop-card .content{padding:16px 18px 22px;}
+  .prop-card .loc{text-transform:uppercase;letter-spacing:.12em;font-size:9.5px;font-weight:700;color:#C96A3C;margin-bottom:4px;}
+  .prop-card h3{font-family:'Playfair Display',serif;font-size:19px;color:#173B4C;margin-bottom:6px;}
+  .prop-card .pitch{font-size:11.5px;color:#5C6C74;line-height:1.4;}
+
+  .scan-block{margin:26px 0;background:#fff;border-radius:16px;box-shadow:0 10px 30px rgba(23,59,76,0.12);padding:26px 32px;display:flex;align-items:center;justify-content:center;gap:30px;flex:none;}
+  .qr-wrap{background:#fff;border:1px solid #F0E5D2;border-radius:12px;padding:12px;display:inline-block;box-shadow:0 6px 16px rgba(23,59,76,.10);flex:none;}
+  .qr-wrap img{width:1.7in;height:1.7in;display:block;}
+  .scan-text{text-align:left;max-width:3.3in;}
+  .scan-text h3{font-family:'Playfair Display',serif;font-size:21px;color:#173B4C;margin-bottom:6px;}
+  .scan-text p{font-size:12px;color:#5C6C74;line-height:1.5;}
+  .scan-label{margin-top:14px;font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#173B4C;}
+
+  .why{margin-top:auto;margin-bottom:20px;background:#173B4C;border-radius:16px;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex:none;flex-wrap:wrap;}
+  .why h4{font-family:'Playfair Display',serif;font-style:italic;font-weight:600;color:#F3C9A6;font-size:18px;white-space:nowrap;}
+  .why-items{display:flex;gap:22px;flex-wrap:wrap;}
+  .why-items div{display:flex;align-items:center;gap:8px;color:#fff;font-size:12px;font-weight:600;white-space:nowrap;}
+  .why-items div .tick{width:17px;height:17px;border-radius:50%;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:10px;color:#8FD9D3;flex:none;}
+
+  .footer{flex:none;background:#173B4C;color:rgba(255,255,255,.85);padding:18px 44px;display:flex;align-items:center;justify-content:space-between;}
+  .footer .brand{font-family:'Playfair Display',serif;font-size:17px;color:#fff;}
+  .footer .brand span{color:#E38150;}
+  .footer .tag{font-size:10.5px;color:rgba(255,255,255,.6);margin-top:2px;}
+  .footer .contact{text-align:right;font-size:11.5px;}
+  .footer .contact div{margin-bottom:2px;}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="header">
+    <div class="brand">Thrill <span>Vacations</span></div>
+    <div class="tag">We're So Glad You're Here</div>
+  </div>
+
+  <div class="body">
+    <div class="lede">
+      <h2>Loved your stay? Check out our other properties and Book direct next time to save on fees.</h2>
+      <p>Scan the code below, pop in your email, and we'll take you straight to real-time pricing and availability for both properties — same trusted host, same secure checkout, no third-party platform in between.</p>
+    </div>
+
+    <div class="props">
+      <div class="prop-card">
+        <img class="photo" src="https://assets.hospitable.com/property_images/2151652/ygrTjb2su78VGbqbVScSsvFBTuc4DmnRKtE80Jcu.jpg" alt="White Sands">
+        <div class="content">
+          <div class="loc">Panama City Beach, FL</div>
+          <h3>White Sands</h3>
+          <div class="pitch">Private saltwater pool, game room, 7-minute walk to the beach.</div>
+        </div>
+      </div>
+      <div class="prop-card">
+        <img class="photo" src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-1152832952825647992/original/3cc68f0e-8780-4e11-be3c-2c0deb919822.jpeg?im_w=1200" alt="Blue Sands">
+        <div class="content">
+          <div class="loc">Murrells Inlet, SC</div>
+          <h3>Blue Sands</h3>
+          <div class="pitch">Pool + hot tub, elevator to every floor, quick walk to the beach.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scan-block">
+      <div class="qr-wrap"><img src="data:image/png;base64,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" alt="QR code to Thrill Vacations"></div>
+      <div class="scan-text">
+        <h3>Scan to Book Direct</h3>
+        <p>One code, both properties. Enter your email to unlock direct-booking pricing and offers on White Sands &amp; Blue Sands.</p>
+      </div>
+    </div>
+
+    <div class="why">
+      <h4>Book Direct</h4>
+      <div class="why-items">
+        <div><span class="tick">&#10003;</span> No booking fees</div>
+        <div><span class="tick">&#10003;</span> Best available pricing</div>
+        <div><span class="tick">&#10003;</span> Direct line to your host</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div>
+      <div class="brand">Thrill <span>Vacations</span></div>
+      <div class="tag">Two private-pool beach houses, booked direct.</div>
+    </div>
+    <div class="contact">
+      <div>sam.avula@thrillvacations.com</div>
+      <div>(650) 605-5899</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
